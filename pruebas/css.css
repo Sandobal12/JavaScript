@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.buscador {
+    width: 100%;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input{
+    display: none;
+}

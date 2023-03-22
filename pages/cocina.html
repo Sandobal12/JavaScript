@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presente en cada rincón de tu hogar, encontrá acá los mejores accesorios para tu cocina.">
+    <meta name="keywords" content="PORCELANA, PORCELANA FRIA, JOYERIA, ACCESORIOS, BIYUTERIE, BIJUTERIE, BIJOUTERIE">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../styles/styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400&family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Articulos de cocina</title>
+</head>
+<body class="body">
+    <header id="header">
+
+        
+        <div class="conteiner-header">
+    
+            <!-- Nombre e iconos -->
+            <section class="titulo-header">
+                <!-- <div id="input-search" class="input">
+                    <input type="search" class="buscador buscador1"  id="search" name="buscador">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div> -->
+                
+                <a href="./../index.html">
+                   <h2>Porselani</h2>
+                </a>
+                
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <div class="container-carCount">
+
+                            <div class="count-products">
+                                <span id="contador-productos">0</span>                
+                            </div>
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20" 
+                            height="20" 
+                            fill="currentColor" 
+                            class="bi bi-cart3" 
+                            viewBox="0 0 16 16">
+                            
+                            <path 
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </div>
+                        <div class="container-cart-products hidden-cart">
+                            <div class="row-product">
+                                <div class="cart-product">
+                                    <div class="info-cart-product">
+                                        <span class="cantidad-producto-carrito"></span>
+                                        <p class="titulo-producto-carrito"></p>
+                                        <span class="precio-producto-carrito"></span>
+                                    </div>
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="icon-close">
+
+                                    <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="cart-total">
+                                <h3>Total:</h3>
+                                <span class="total-pagar">$0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fin Nombre e iconos -->
+        </div>
+        
+        <!-- Menu navbar -->
+        <div class="conteiner-navbar">
+            <nav class="navbar">
+                <input type="checkbox" id="check" class="check">
+                <label for="check" class="checkbtn">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+                <ul class="menu">
+                    <li><a href="./todo.html">Todo</a></li>
+                    <li class="accesorios"><a href="./accesorios.html">Acceosorios</a>
+                        <ul class="submenu">
+                            <li><a href="./caravanas.html">Caravanas</a></li>
+                            <li><a href="./cabello.html">Cabello</a></li>
+                        </ul>
+                    </li>
+                    <li class="arte"><a href="./arte.html">Arte</a>
+                        <ul class="submenu">
+                            <li><a href="./apoyapinceles.html">Apoya Pinceles</a></li>
+                            <li><a href="./paletas.html">Paletas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./cocina.html">Cocina</a></li>
+                </ul>
+            </nav>
+
+            <div class="iconos-redes">
+                <div class="icono-header">
+                    <a href="https://instagram.com/porcelani4?igshid=YmMyMTA2M2Y=" class="iconIg" target="_blank"><img src="./../fotos/logoInstagram.png" alt="logoInstagram" class="logo"></a>
+                </div>
+        
+                <div class="icono-header">
+                    <a href="https://wa.link/3xmto9" class="iconWapp" target="_blank"><img src="./../fotos/logoWapp2.png" alt="logoWapp" class="logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin menu navbar -->
+        
+    </header>
+    
+    <div class="subtitulo">
+        <h3>Cocina</h3>
+    </div>
+
+    <section class="container-items">
+        <div class="galeria">
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas1.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas2.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas3.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas4.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas5.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas6.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/apoyaCucharas7.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Apoya Cucharas</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos1.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos2.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos3.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos4.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos5.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 400px;">
+                <img src="./../fotos/todo/posaVasos6.jpeg" class="card-img-top img" alt="...">
+                <div class="card-body descripcion">
+                    <h5 class="card-title">Posa Vasos</h5>
+                    <p class="card-text price">$200</p>
+                    <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divButton">
+        <button id="btn-unete-ya" class="btn btn-primary button" type="button">Unite Ya!</button>
+        <div id="btns-opciones" class="opciones">
+            <button class="btn-info btn-login">Iniciar sesión</button>
+            <button class="btn-info btn-registro">Registrasrse</button>
+        </div>
+        <div class="formularios">
+            <form class="forms login-form" id="login-form">
+                
+                <label>
+                    <p>Nombre de usuario</p>
+                    <input type="text" id="login-usuario" name="usuario" required>
+                </label>
+
+                <label>
+                    <p>Contraseña:</p>
+                    <input type="password" id="login-contrasena" name="contrasena" required>
+                </label>
+                
+                <button type="submit">Iniciar sesión</button>
+            </form>
+
+            <form class="forms registro-form" id="registro-form">
+                <label>
+                    <p>Nombre:</p>
+                    <input type="text" id="registro-nombre" required>
+                </label>
+                <label>
+                    <p>Apellido:</p>
+                    <input type="text" id="registro-apellido" required>
+                </label>
+                <label>
+                    <p>Nombre de usuario</p>
+                    <input type="text" id="registro-usuario" required>
+                </label>
+                <label>
+                    <p>Contraseña</p>
+                    <input type="password" id="registro-contrasena" required>
+                </label>
+            
+                    <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="redesSociales">
+        <h3>Encuentranos también</h3>
+        <div class="twitter">Twitter</div>
+        <div class="facebook">Facebook</div>
+        <div class="tikTok">TikTok</div>
+    </div>
+    
+    <footer>
+        <ul class="footer">
+            <li>Contacto</li>
+            <li>Donde encontrarnos</li>
+            <li>Cambios y Garantía</li>
+            <li>Envíos</li>
+            <li>Materiales y Cuidados</li>
+            <li>Sobre nosotros</li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./../js/script.js"></script>
+    <script src="./../js/data.json"></script>
+    <script src="./../js/launch.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

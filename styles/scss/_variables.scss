@@ -1,0 +1,13 @@
+$maps: (
+    position: absolute,
+    display: block,
+    displayF: flex,
+);
+
+@mixin ancho($width) {
+    width: $width;
+}
+
+@mixin alto($heigth) {
+    height: $heigth;
+}

@@ -1,0 +1,449 @@
+/* Paleta de colores
+
+PALE GOLD
+#C0B283
+
+SILK 
+#DCD0C0
+
+PAPER
+#F4F4F4
+
+CHARCOAL
+#373737 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #c0b283;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  left: 0;
+}
+
+.checkbtn {
+  color: black;
+  line-height: 50px;
+  left: 10px;
+  top: 7px;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* @media screen and (max-width: 400px) {
+    .checkbtn {
+        line-height: 10px;
+    }
+}
+
+
+
+.iconos {
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    transform: translateY(71px);
+    z-index: 10;
+
+}
+
+.logo {
+    @include ancho(40px);
+    @include alto(40px);
+    border-radius: 30%;
+    background: $backgroundRosa;
+    border: 1px solid $black;
+}
+
+.titulo {
+    @include alto(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.spans {
+    @include ancho(300px);
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-25px);
+}
+
+
+
+
+.divButton {
+    margin-top: 100px;
+    @include ancho(70%);
+}
+
+.button {
+    color: $black;
+    background-color: $backgroundRosa;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.col {
+    margin: 10px;
+
+    img {
+        @include alto(100%);
+    }
+}
+*/
+.footer {
+  padding-left: 20px;
+  list-style-type: disc;
+  line-height: 1.9;
+  margin-top: 100px;
+}
+
+.redesSociales {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.redesSociales .twitter, .redesSociales .tikTok, .redesSociales .facebook {
+  border: 2px solid;
+  border-radius: 100px;
+  background-color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  color: #00acee;
+  cursor: pointer;
+}
+.redesSociales .facebook {
+  color: #3b5998;
+}
+.redesSociales .tikTok {
+  color: #ff0050;
+}
+
+@media screen and (min-width: 768px) {
+  .col {
+    margin: 10px;
+  }
+  .col img {
+    height: 100%;
+  }
+  .row {
+    width: 85%;
+    transform: translateX(108px);
+  }
+  .checkbtn {
+    display: none;
+  }
+  #header {
+    display: grid;
+    grid-template-rows: 40px 120px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  #header .conteiner-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  #header .conteiner-navbar .menu {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  #header .conteiner-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  #header .titulo-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    border: 1px solid;
+    padding-top: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  #header .titulo-header a {
+    text-decoration: none;
+    color: black;
+  }
+  #header .count-products {
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+  }
+  #header .container-carCount {
+    display: flex;
+    align-items: center;
+  }
+  #header .hidden-cart {
+    display: none;
+  }
+  #header .container-cart-products {
+    z-index: 1;
+    width: 250px;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  #header .container-cart-products .info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+  }
+  #header .container-cart-products .icon-close {
+    width: 20px;
+    height: 20px;
+  }
+  #header .container-cart-products .icon-close:hover {
+    stroke: red;
+    cursor: pointer;
+  }
+  #header .container-cart-products .cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  #header .container-cart-products .cart-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  #header .container-cart-products .cart-total h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #header .container-cart-products .cart-total .total-pagar {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #header .container-cart-products .titulo-producto-carrito {
+    font-size: 20px;
+  }
+  #header .container-cart-products .precio-producto-carrito {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  #header .container-cart-products .cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #header li {
+    list-style: none;
+  }
+  #header li a {
+    text-decoration: none;
+    color: #c0b283;
+  }
+  #header .submenu {
+    display: none;
+  }
+  #header .cart-empty {
+    padding: 20px;
+    text-align: center;
+  }
+  /* No se que es 
+    .grande {
+        padding-top: 100px;
+        @include ancho(100%);
+        @include alto(400px);
+        display: flex;
+        justify-content: space-around;
+    } */
+  .divButton {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-info {
+    padding: 0.2rem;
+  }
+  .opciones {
+    display: none;
+  }
+  .formularios {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .formularios .forms {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .formularios .login-form {
+    display: none;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-color: #e8e8e8;
+    gap: 0.7rem;
+    padding: 10px 50px;
+  }
+  .formularios .registro-form {
+    display: none;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-color: #e8e8e8;
+    gap: 0.7rem;
+    padding: 10px 50px;
+  }
+  .button {
+    color: black;
+    background-color: #F4F4F4;
+    font-size: 20px;
+    border: 1px solid black;
+  }
+  .button:active .opciones {
+    display: block;
+  }
+  .list-group {
+    position: absolute;
+    /* 
+    display: none; */
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: auto;
+  }
+  .footer li {
+    list-style: disc;
+  }
+  .volverArriba {
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+  }
+}
+/* CSS DE TODO.HTML */
+/* .divButton {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+.subtitulo {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.galeria {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.card {
+  width: 80%;
+  height: 420px;
+  background-color: #e2dcdc;
+}
+
+.img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.descripcion {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titulo a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .container-items {
+    margin-top: 50px;
+  }
+  .subtitulo {
+    padding-top: 5px;
+  }
+  .galeria {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+  }
+  .img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 70%;
+  }
+  .descripcion {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+/* Boton con efecto */
+/* 
+Body {
+    background: #e8e8e8;
+}
+
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5
+                -6px -6px 12px #fff;
+}
+
+button:hover {
+    box-shadow: -6px -6px 12px #c5c5c5
+                6px 6px 12px #fff;
+}
+ *//*# sourceMappingURL=styles.css.map */

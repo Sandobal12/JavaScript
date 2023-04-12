@@ -1,15 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "Salonera web",
-			"path": "."
-		},
-		{
-			"name": "Scripts de actividades extra _ Workbook",
-			"path": "../../Downloads/Scripts de actividades extra/Scripts de actividades extra _ Workbook"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Salonera web"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }

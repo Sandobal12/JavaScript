@@ -12,53 +12,88 @@ btnCart.addEventListener('click', () => {
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
-// Lista de todos los contenedores de productos
-
-const productsList = document.querySelector('.container-items');
-
 
 // variable de arreglos de productos
 
-let allProducts = []
+
+
+let allProducts = JSON.parse(localStorage.getItem('carrito')) || [];
+
+
+const productsLocal = () => {
+  localStorage.setItem('carrito', JSON.stringify(allProducts));
+};
 const valorTotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('#contador-productos');
 
+// catalogo
 
-productsList.addEventListener('click', e => {
+const galeria = document.getElementById('galeria');
 
-    if(e.target.classList.contains('btn-add-cart')){
-        const product = e.target.parentElement;
+fetch('../js/data.json')
+.then(response => response.json())
+.then(data => {
+  if(Array.isArray(data.productos)) {
+    data.productos.forEach((product) => {
+      const content = document.createElement('div');
+      content.className = 'card';
+      content.innerHTML =  `
+      <img src='${product.img}' class="card-img-top img" alt="...">
+      <div class="card-body descripcion">
+          <h5 class="card-title title">${product.nombre}</h5>
+          <p class="card-text price">$${product.precio}</p>
+          <button type="button" class="btn btn-add-cart btn-outline-secondary">Añadir al carrito</button>
+          </div>
+          `;
+          
+          galeria.append(content)
+          
+        });
+      }else {
+        console.error('La variable productos no es un arreglo')
+      }
+    })
+    .then (() => {
+      galeria.addEventListener('click', e => {
 
-        const infoProduct = {
-            quantity: 1,
-            title: product.querySelector('h5').textContent,            
-            price: product.querySelector('p').textContent,
-        };
+      if(e.target.classList.contains('btn-add-cart')){
+          const product = e.target.parentElement;
+          
+          const infoProduct = {
+              quantity: 1,
+              title: product.querySelector('.title').textContent,         
+              price: product.querySelector('.price').textContent,
+          };
+  
+          console.log(infoProduct);
 
-        const exist = allProducts.some(product => product.title === infoProduct.title);
-
-        if(exist){
-            const products = allProducts.map(product => {
-                if(product.title === infoProduct.title){
-                    product.quantity++;
-                    return product;
-                }else{
-                    return product;
-                }
-            })
-
-            allProducts = [...products];
-        }else{
+          const exist = allProducts.some(product => product.title === infoProduct.title);
+  
+          if(exist){
+              const products = allProducts.map(product => {
+                  if(product.title === infoProduct.title){
+                      product.quantity++;
+                      return product;
+                  }else{
+                      return product;
+                  }
+              })
+  
+              allProducts = [...products];
+          }else{
             allProducts = [...allProducts, infoProduct];
+          }
+          
+          productsLocal()
+          showHtml();
         }
+      });
+    })
+    .catch(error => console.log(error));
 
-        showHtml();
-    }
-    
-});
 
-rowProduct.addEventListener('click', e => {
-    if(e.target.classList.contains('icon-close')){
+    rowProduct.addEventListener('click', e => {
+      if(e.target.classList.contains('icon-close')){
         const product = e.target.parentElement;
         const title = product.querySelector('p').textContent;
 
@@ -66,25 +101,25 @@ rowProduct.addEventListener('click', e => {
             product => product.title !== title
         );
 
-        console.log(allProducts);
+        productsLocal();
         showHtml();
-
-    }
-})
-
-// Funcion para mostrar HTML
-
-const showHtml = () => {
-
-
-    if(!allProducts.length){
+        
+      }
+    })
+    
+    // Funcion para mostrar HTML
+    
+    const showHtml = () => {
+      
+      
+      if(!allProducts.length){
         containerCartProducts.innerHTML = `
-            <p class="cart-empty">El carrito está vacío</p>
+        <p class="cart-empty">El carrito está vacío</p>
         `
+    } else {
+      rowProduct.innerHTML = '';
     }
 
-    // Limpiador de HTML
-    rowProduct.innerHTML = '';
 
 
     let total = 0;
@@ -129,18 +164,10 @@ const showHtml = () => {
     countProducts.innerText = totalOfProducts;
 
 }
+showHtml();
 
 
-//  buscador
 
-// const inputSearch = document.getElementById('search');
-// const buscador = document.getElementsByClassName('buscador');
-// const clickSearch = document.getElementById('input-search');
-
-
-// inputSearch.addEventListener('input', () => {
-//     console.log(inputSearch.value);
-// })
 
 
 

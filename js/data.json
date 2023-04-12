@@ -1,8 +1,86 @@
 {
-    "data" : {
-      "usuarios": [
-        
-      ]
-    }
-  }
-  
+  "data": {
+      "usuarios": []
+  },
+
+  "productos": [
+      {
+          "id": 1,
+          "nombre": "Apoya Cucharas1",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas1.jpeg"
+      },
+      {
+          "id": 2,
+          "nombre": "Apoya Cucharas2",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas2.jpeg"
+      },
+      {
+          "id": 3,
+          "nombre": "Apoya Cucharas3",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas3.jpeg"
+      },
+      {
+          "id": 4,
+          "nombre": "Apoya Cucharas4",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas4.jpeg"
+      },
+      {
+          "id": 5,
+          "nombre": "Apoya Cucharas5",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas5.jpeg"
+      },
+      {
+          "id": 6,
+          "nombre": "Apoya Cucharas6",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas6.jpeg"
+      },
+      {
+          "id": 7,
+          "nombre": "Apoya Cucharas7",
+          "precio": 200,
+          "img": "./../fotos/todo/apoyaCucharas7.jpeg"
+      },
+      {
+          "id": 1,
+          "nombre": "Posa Vasos1",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos1.jpeg"
+      },
+      {
+          "id": 2,
+          "nombre": "Posa Vasos2",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos2.jpeg"
+      },
+      {
+          "id": 3,
+          "nombre": "Posa Vasos3",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos3.jpeg"
+      },
+      {
+          "id": 4,
+          "nombre": "Posa Vasos4",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos4.jpeg"
+      },
+      {
+          "id": 5,
+          "nombre": "Posa Vasos5",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos5.jpeg"
+      },
+      {
+          "id": 6,
+          "nombre": "Posa Vasos6",
+          "precio": 200,
+          "img": "./../fotos/todo/posaVasos6.jpeg"
+      }
+  ]
+}

@@ -1,14 +1,14 @@
-const index = document.getElementById('body');
+// const index = document.getElementById('body');
 
-// enlace con el buscador
+// // enlace con el buscador
 
-const inputSearch = document.getElementById('search');
+// const inputSearch = document.getElementById('search');
 
-let search = document.getElementsByClassName('search-input');
-
-
+// let search = document.getElementsByClassName('search-input');
 
 
-inputSearch.addEventListener('click', () => {
-    inputSearch.classList.toggle('search-input')
-})
+
+
+// inputSearch.addEventListener('click', () => {
+//     inputSearch.classList.toggle('search-input')
+// })
